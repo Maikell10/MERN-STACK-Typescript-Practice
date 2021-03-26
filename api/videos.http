@@ -3,13 +3,25 @@
 GET {{api}}/videos
 
 ###
-GET {{api}}/videos/1
+GET {{api}}/videos/605d465e197c3b4bf88080ec
 
-###
+### Create a Video
 POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7w",
+    "title": "MERN STACK & Typescript",
+    "description": "MERN STACK with Typescript, backend and frontend"
+}
 
 ###
-DELETE {{api}}/videos/1
+DELETE {{api}}/videos/605d4004f0b1c744dc8b17a7
 
 ###
-PUT {{api}}/videos/1
+PUT {{api}}/videos/605d465e197c3b4bf88080ec
+Content-Type: application/json
+
+{
+    "title": "Docker Curso"
+}
