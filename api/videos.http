@@ -1,0 +1,15 @@
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/1
+
+###
+POST {{api}}/videos
+
+###
+DELETE {{api}}/videos/1
+
+###
+PUT {{api}}/videos/1
