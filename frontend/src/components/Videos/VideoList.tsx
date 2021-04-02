@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Video } from "./Video";
 import * as videoService from './VideoService'
+import VideoItem from './VideoItem'
 
 const VideoList = () => {
     const [videos, setVideos] = useState<Video[]>([]);
@@ -17,11 +18,7 @@ const VideoList = () => {
     return (
         <div>
             {videos.map((video) => {
-                return (
-                    <div>
-                        <h1>{video.title}</h1>
-                    </div>
-                );
+                return <VideoItem video={video} />
             })}
         </div>
     );
